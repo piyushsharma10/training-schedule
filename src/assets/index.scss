@@ -1,0 +1,47 @@
+$secondary-color: #6c757d;
+$dark-gray: #4a4a4a;
+$light-gray: #757575;
+$border-color: #ced4da;
+$text-color: #495057;
+$shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
+
+@mixin auto-centered($width) {
+  max-width: $width;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import 'list.scss';
+@import 'training_form.scss';
+
+body {
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+.container {
+  padding-left: 30px;
+  padding-right: 30px;
+  position: relative;
+  @media only screen and (min-width: 993px) {
+    width: 90%;
+  }
+  @media(max-width: 500px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+.admin {
+  position: relative;
+  .training-btn {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+}
+
+.main-container {
+  margin-top: 40px;
+}
